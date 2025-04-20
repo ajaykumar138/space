@@ -10,7 +10,7 @@
   flex: 1 1 calc(33.333% - 20px);
   background-color: rgb(255 255 255);
   border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -42,13 +42,13 @@
   flex-grow: 1;
 }
 
-@media (max-width: 768px) {
-.tiles .tile {
- flex: 1 1 calc(50% - 20px);
+@media (width <= 768px) {
+  .tiles .tile {
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .tiles .tile {
     flex: 1 1 100%;
   }
